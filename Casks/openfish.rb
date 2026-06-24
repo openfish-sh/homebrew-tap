@@ -1,6 +1,6 @@
 cask "openfish" do
-  version "0.1.6"
-  sha256 "ed0100c44242c0c3d49c31448dac7732f92ecc8725f5a32395be7b4ea081f886"
+  version "0.1.7"
+  sha256 "5ea28743bca814df71cbe2e43705fb05836a83d91705f983399cb49f1ef16c62"
 
   url "https://github.com/openfish-sh/openfish/releases/download/v#{version}/Openfish.dmg"
   name "Openfish"
