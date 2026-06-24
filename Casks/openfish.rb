@@ -1,19 +1,17 @@
 cask "openfish" do
-  version "0.1.0"
-  sha256 "8f7355bcfe7fb439aa2e8cc9ad1e5b571de0fd0627fb3d8487d74ae6016a9fef"
+  version "0.1.1"
+  sha256 "fdcf0499a1283f484ae8a7415272adbd4c0ba0d9141ac980e5fd31c907e721c7"
 
-  url "https://github.com/openfish-sh/openfish/releases/download/v#{version}/OpenFish.dmg"
-  name "OpenFish"
+  url "https://github.com/openfish-sh/openfish/releases/download/v#{version}/Openfish.dmg"
+  name "Openfish"
   desc "Bring-your-own-key macOS menu-bar writing assistant"
   homepage "https://github.com/openfish-sh/openfish"
 
-  app "OpenFish.app"
+  app "Openfish.app"
 
   caveats <<~EOS
-    OpenFish is self-signed, not notarized, so the first launch needs a manual OK:
-      - macOS 14 and earlier: right-click OpenFish in Applications, then Open, then Open.
-      - macOS 15+: try to open it, then System Settings > Privacy & Security > "Open Anyway".
-    After that, grant Accessibility when asked and paste your own API key in Settings.
+    Grant Accessibility when prompted (Settings > Permissions), then add your own API
+    key in Settings — Claude, OpenAI, Gemini, or any OpenAI-compatible endpoint.
   EOS
 
   zap trash: [
